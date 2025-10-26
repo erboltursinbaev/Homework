@@ -1,0 +1,26 @@
+.block1{
+  border: 1px solid;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #e9e7f3;
+  max-height: 480px;
+  max-width: 85%;
+overflow-y: scroll;
+padding-top: 10px;
+padding-left: 3px;
+}
+.container{
+  max-width: 80%;
+}
+.block-n{
+  display: inline-block;
+  padding: 16px 2px 16px 16px;
+  max-width: 200px;
+  max-height: 230px;
+  border: 1px solid;
+  box-shadow: inset 2px;
+  margin: 0 11px 22px 0px;
+  border-radius: 25px;
+  background-color: #b6a283;
+  box-shadow: inset 2px 2px  #847675;
+}
