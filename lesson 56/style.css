@@ -50,7 +50,7 @@ color: blue;
 
 
 .header__body{
-  background-image: url('../img/Rectangle.webp') ;
+  background-image: url('img/Rectangle.webp') ;
   background-size: cover;
 
   height: 508px;
@@ -217,4 +217,5 @@ margin-bottom: 10px;
 }
 .footer__nav-item:last-child{
   margin-bottom: 0;
+
 }
