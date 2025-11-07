@@ -1,0 +1,20 @@
+
+.rectangle{
+  width: 48vw;
+  background-color: black;
+  position: sticky;
+  right: 50px;
+  bottom: 100px;
+  left: 50%;
+  min-height: 100px;
+  border-radius: 10px;
+}
+.circle{
+  background-color: red;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -50%;
+  left: 12%;
+}
