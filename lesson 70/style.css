@@ -1,0 +1,33 @@
+.place{
+  position: absolute;
+  left:30%;
+  top: 5%;
+}
+.red{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 20px;
+}
+.green{
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  border-radius: 20px;
+}
+.purple{
+  width: 150px;
+  height: 150px;
+  background-color: purple;
+  border-radius: 20px;
+}
+.transform__red{
+    transform: translate(550px, 500px);
+}
+.transform__green{
+    transform: translate(350px, -70px) rotate(25deg);
+}
+.transform__purple{
+transform: translate(700px, -220px) scale(2)
+
+}
