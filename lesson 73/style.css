@@ -1,0 +1,56 @@
+body{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.square{
+  width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    background-color: grey;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    transition: .3s;
+  }
+  .square span{
+    color: green;
+    font-size: 20px;
+    transition: .3s;
+    opacity: 0;
+  }
+  .square:hover span{
+    opacity: 1;
+  }
+  
+.block{
+  position: absolute;
+    top: 300px;
+    height: 25px;
+    
+  transform: scaleX(0);
+  transform-origin: left;
+
+}
+.white{
+    background-color: red;
+}
+
+.square:hover .block{
+  width: 50%;
+  transform: scaleX(1);
+}
+
+.block{
+  transition-duration: .3s;
+  
+}
+.white{
+   transition-timing-function: ease;
+   
+}
