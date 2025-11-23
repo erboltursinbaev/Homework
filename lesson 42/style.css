@@ -1,0 +1,118 @@
+:root{
+  --form-width: 360px;
+  --accent: #111;
+  --bg: #fff;
+  --radius: 8px;
+}
+
+/* Сброс мелкий */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #ffffff;
+  color:var(--accent);
+  padding:28px;
+}
+
+/* Центрирование контейнера (чтобы выглядело как на скрине) */
+main{
+  min-height:100vh;
+}
+
+/* Форма */
+.profile-form{
+  width:var(--form-width);
+  max-width:calc(100% - 40px);
+  margin: 12px 0 0 16px; /* смещение слева как на изображении */
+}
+
+/* Внешняя рамка формы — используем поле fieldset */
+.profile-form fieldset{
+  border:2px solid #111;
+  border-radius:12px;
+  padding:26px 18px 18px;
+  background:var(--bg);
+  
+}
+
+/* Заголовок (legend) */
+.profile-form h2{
+  font-weight:700;
+  font-size:1.05rem;
+  padding:0 8px;
+  margin-left: 10px;
+}
+
+/* Отступы между полями и стили */
+.profile-form label{
+  display:block;
+  margin-top:14px;
+  margin-bottom:6px;
+  font-weight:500;
+}
+
+/* Поля ввода и textarea */
+.profile-form input[type="text"],
+.profile-form input[type="email"],
+.profile-form input[type="tel"],
+.profile-form input[type="number"],
+.profile-form textarea{
+  display:block;
+  width:100%;
+  padding:10px 12px;
+  border-radius:8px;
+  border:2px solid #777;
+  font-size:14px;
+  outline:none;
+  background: #fff;
+  transition: border-color .12s, box-shadow .12s;
+}
+
+/* Эффект фокуса */
+.profile-form input:focus,
+.profile-form textarea:focus{
+  border-color: #111;
+  box-shadow: 0 0 0 3px rgba(17,17,17,0.06);
+}
+
+/* Размер textarea чуть выше */
+.profile-form textarea{
+  resize:vertical;
+  min-height:54px;
+  max-height:160px;
+}
+
+/* Чекбокс и текст рядом */
+label.checkbox{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-top:12px;
+  font-weight:500;
+}
+
+/* Стили для скрытого визуального дефолтного чекбокса (оставляем видимым стандартный) */
+.profile-form input[type="checkbox"]{
+  width:16px;
+  height:16px;
+  margin:0;
+}
+
+/* Кнопка отправки */
+.profile-form button[type="submit"]{
+  margin-top:12px;
+  padding:6px 12px;
+  border-radius:6px;
+  border:2px solid #666;
+  background:#fff;
+  font-size:14px;
+  cursor:pointer;
+}
+
+/* При наведении */
+.profile-form button[type="submit"]:hover{
+  border-color:#111;
+}
+
