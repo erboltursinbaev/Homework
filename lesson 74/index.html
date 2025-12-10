@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Форма — Пример</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  
+    <form class="profile-form">
+      <fieldset class="form-group" >
+       <legend class="form-group-title">Ваши личные данные</legend>
+
+        <label class="label">Ваше имя</label>
+        <input class="input"  type="text" placeholder="Имя" required />
+
+        <label class="label">Ваш возраст</label>
+        <input class="input" type="number" placeholder="Возраст" required />
+
+        <label class="label">Ваш номер телефона</label>
+        <input class="input" type="tel" placeholder="Номер телефона" required />
+
+        <label class="label">Ваша почта</label>
+        <input class="input" type="email" placeholder="Почта" required />
+
+        <label class="label">Сообщение</label>
+        <textarea class="textarea" placeholder="Ваше сообщение" required></textarea>
+
+        <label class="label checkbox-label">
+          <input class="checkbox" type="checkbox"  required />
+          <span class="checkbox-text">Я принимаю правила</span>
+        </label>
+      </fieldset>
+      
+              <button class="button" type="submit">Отправить</button>
+    </form>
+  
+</body>
+</html>
