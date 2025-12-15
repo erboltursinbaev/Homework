@@ -82,3 +82,18 @@ a {
   text-transform: uppercase;
   color: #2c332f;
 }
+.title-medium {
+  font-weight: 500;
+  color: #2c332f;
+  line-height: 115%;
+  font-family: Oswald, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #3596ed;
+  outline-offset: 1px;
+}
