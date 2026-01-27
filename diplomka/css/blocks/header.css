@@ -1,0 +1,185 @@
+/* Скрытый переключатель */
+.header__top-toggle {
+  display: none;
+}
+
+/* Верхний промо-хедер */
+.header__top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: var(--main-glow-color);
+  color: var(--main-color);
+  z-index: 1;
+  padding: 10px 0 10px 0;
+
+}
+
+.header__top-container {
+  margin: 0 auto;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.header__top-link{
+text-decoration: underline;
+}
+.header__top-text {
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.header__top-close {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: var(--main-color);
+}
+.header__top-icon{
+  transition: var(--transition-time ease);
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@media (any-hover: hover) {
+	.header__top-close:hover .header__top-icon {
+		transform: scale(1.5);
+	}
+}
+/* Когда чекбокс включён — скрываем header_top */
+.header__top-toggle:checked + .header__top {
+  display: none;
+}
+@media (max-width:768px){
+  .header__top-text{
+    font-size: 0;
+  }
+  .header__top-link{
+    font-size: 14px;
+    text-emphasis-color: none;
+  }
+}
+/* header-main*/
+
+.header__main {
+   position: fixed;
+  
+  left: 0;
+  right: 0;
+  padding: 13px 13px ;
+  margin-top: 90px;
+}
+.container--main{
+  
+  width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  margin-inline: auto;
+}
+.header__main-container {
+  padding: 12px 20px;
+  display: flex;
+  
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  max-height: 48px;
+  gap: 40px;
+}
+.logo {
+  font-family: var(--font-family-main);
+font-weight: 700;
+font-size: 32px;
+line-height: 100%;
+}
+.header__main-logo {
+}
+.header__main-menu {
+}
+.header__menu-list {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 24px;
+}
+.header__menu-item {
+  white-space: nowrap;
+}
+.header__main-search {
+  width: 465px;
+	height: 50px;
+}
+.header__search-icon {
+}
+.header__main-controls {
+}
+.header__actions {
+  width: 24px;
+	height: 24px;
+}
+.header__action-icon {
+}
+
+
+
+.header__main-search {
+  position: relative;
+  width: 420px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* input */
+.header__main-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #F0F0F0;
+  padding: 10px 0;
+  font-size: 16px;
+  border-radius: 999px;
+  /* Frame 3 */
+width: 462px;
+height: 48px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 12;
+padding: 12px 16px 12px 16px;
+
+
+}
+
+/* SVG иконка */
+.header__main-search svg {
+  width: 20px;
+  height: 20px;
+  fill: #b3f00a;
+}
+
+/* Линия со скруглением */
+.header__main-search::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s ease;
+}
+
+/* Анимация при фокусе */
+.header__main-search:focus-within::after {
+  transform: scaleX(1);
+}
