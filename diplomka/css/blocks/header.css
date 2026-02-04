@@ -188,7 +188,7 @@ display: none;
   }
   .header__main-menu--open{
     left: 0;
-    opacity: 0;
+    opacity: 1;
     visibility: visible;
   }
   .header__main-menu .header__menu-list{
@@ -203,4 +203,5 @@ display: none;
 }
 .header__menu-item svg{
   display: none;
+
 }}
