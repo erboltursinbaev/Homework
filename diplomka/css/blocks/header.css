@@ -4,6 +4,7 @@
   right: 0;
   left: 0;
   width: 100%;
+  z-index:var(--layer-1);
 }
 /* Скрытый переключатель */
 .header__top-toggle {
@@ -204,4 +205,5 @@ display: none;
 }
 .header__menu-item svg{
   display: none;
+
 }}
