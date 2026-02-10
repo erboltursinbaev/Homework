@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <script defer src="./js/index.js" type="module"></script>
+  <title>Shop.co</title>
+</head>
+<body>
+  <header class="header">
+    <input type="checkbox" id="header__top-close" class="header__top-toggle">
+    <div class="header__top">
+      <div class="container header__top-container">
+      <p class="header__top-text">Зарегестрируйтесь и получите скидку 20% на первую покупку. <a href="#" class="header__top-link" aria-label="Ссылка для регистрации">Зарегестрироваться сейчас</a></p>
+    <label for="header__top-close" class="header__top-close" >
+         <svg  width="20" height="20">
+        <use class="header__top-icon" href="./icons/sprite.svg#close">
+        </use>
+      </svg> 
+      
+    </label>  
+    </div>
+    </div>
+    
+    <div class="header__main">
+        <div class="container header__main-container">
+
+<div class="header__brand">
+            <button	class="header__burger burger"
+  							aria-label="Открыть меню"
+  							aria-expanded="false"
+  							aria-controls="header__main-menu">
+  							<svg width="24" height="24">
+  								<use
+  									class="burger__icon-menu"
+  									href="./icons/sprite.svg#burger"
+  								></use>
+  								<use
+  									class="burger__icon-cross"
+  									href="./icons/sprite.svg#cross"
+  								></use>
+  							</svg>
+  						</button>
+              <div class="header__main-logo" aria-label="Логотип">
+                <a  href="#">
+                  SHOP.CO
+                </a>
+              </div>
+</div>
+            <nav class="header__main-menu" aria-label="Главное меню">
+              <ul class="header__menu-list">
+              <li class="header__menu-item"><a class="header__menu-link" href="#" aria-label="Магазин">Магазин</a> <svg   width="16"	height="16">
+                <use class="header__menu-icon"  href="./icons/sprite.svg#dropdown"></use>
+              </svg>
+                <ul class="dropdown" aria-label="Выпадающий меню">
+                  <li class="dropdown__item"><a class="dropdown__item-link" href="#" aria-label="Магазин">Магазин</a></li>
+                  <li class="dropdown__item"><a class="dropdown__item-link" href="#" aria-label="Магазин">Магазин</a></li>
+                </ul>
+              </li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#" aria-label="Скидки">Скидки</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#" aria-label="Новые поступления">Новые поступления</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#" aria-label="Новые Бренды">Бренды</a></li>
+            </ul>
+            </nav>
+          
+            <div class="header__main-search" aria-label="Поиск">
+              <svg   width="24"	height="24">
+                <use class="header__main-icon"  href="./icons/sprite.svg#search"></use>
+              </svg>
+              <input type="text" placeholder="Искать товары...">
+            </div>
+            <div class="header__main-actions">
+              
+                <button class="header__action-search" aria-label="Поиск">
+                  <svg width="24" height="24">
+                    <use class="header__action-search" href="./icons/sprite.svg#search1"></use>
+                  </svg>
+                  </button>
+                <button class="header__action-button" aria-label="Корзина">
+                  <svg width="24" height="24">
+                    <use class="header__action-icon" href="./icons/sprite.svg#cart"></use>
+                  </svg>
+                  </button>
+                  <button class="header__action-button" aria-label="Вход">
+                    <svg width="24"	height="24">
+                      <use class="header__action-icon" href="./icons/sprite.svg#LogIn"></use>
+                    </svg>
+                  </button>
+            </div>
+             </div>
+        </div>
+      </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container ">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <div class="hero__title">
+                НАЙДИ ОДЕЖДУ КОТОРАЯ ВЫРАЗИТ ТВОЙ СТИЛЬ
+              </div>
+              <div class="hero__info">
+                Просмотрите наш набор тщательно сделанной одежды, созданный чтобы подчеркнуть ваш индивидуальный стиль.
+              </div>
+              <button class="hero__button button"><a href="#" class="hero__link">Купить сейчас</a></button>
+              <div class="hero__stats">
+                <div class="hero__stat">
+                  <span class="stat__value">200+</span>
+                  <span class="stat__label">Всемирных брендов</span>
+                </div>
+                <div class="hero__stat">
+                  <span class="stat__value">2,000+</span>
+                  <span class="stat__label">Качественных товаров</span>
+                </div>
+                <div class="hero__stat">
+                  <span class="stat__value">30,000+</span>
+                  <span class="stat__label">Счастливых клиентов</span>
+              </div>
+            </div>
+            </div>
+            
+             
+                <picture>
+                  <img
+                  class="hero__img"
+                  src="./images/Models.png"
+                  width="1443"
+                  height="663"
+                  alt="Картинка верхной одежды"
+      						/>
+      					</picture>
+              
+            
+            
+          </div>
+          </div>
+    </section>
+    <section class="brands">
+      <div class="container brands__container">
+          <div class="brand">
+          <svg class="brand__icon brand__icon-versace"  >
+            <use href="./icons/sprite-logo.svg#versace"></use>
+          </svg>
+        </div>
+        <div class="brand">
+          <svg class="brand__icon brand__icon-zara">
+            <use href="./icons/sprite-logo.svg#zara"></use>
+          </svg>
+        </div>
+        <div class="brand">
+          <svg class="brand__icon brand__icon-gucci" >
+            <use href="./icons/sprite-logo.svg#gucci"></use>
+          </svg>
+        </div>
+        <div class="brand">
+          <svg class="brand__icon brand__icon-prada" >
+            <use href="./icons/sprite-logo.svg#prada"></use>
+          </svg>
+        </div>
+        <div class="brand">
+          <svg class="brand__icon brand__icon-calvin" >
+            <use href="./icons/sprite-logo.svg#calvin"></use>
+          </svg>
+        </div>
+  
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  
+</body>
+</html>
