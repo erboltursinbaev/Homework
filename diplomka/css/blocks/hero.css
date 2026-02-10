@@ -75,7 +75,7 @@ background: var(--accent-color);
   .hero__stat:nth-child(3) {
     order: 1;
     flex-basis: 100%;
-    translate: 15% 0;
+    
   }
   .hero__stat:nth-child(3)::before{
     display: none;
@@ -155,3 +155,4 @@ width: 182px;
     translate: -35% 0;
   }
 }
+
