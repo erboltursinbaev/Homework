@@ -1,0 +1,55 @@
+.brands {
+ 
+  height: clamp(7.625rem , 9.6821rem + -2.2857vw, 9.125rem);
+  background-color: var(--accent-color);
+  padding:  clamp(2.4375rem, 2.3679rem + 0.2857vw, 2.625rem); 
+}
+@media (width<=768px) {
+  .brands {
+  margin-top:clamp(0.0625rem, -0.4534rem + 2.1164vw, 0.5625rem);
+}
+  
+}
+.brands__container{
+  display: flex;
+ flex-wrap: wrap;
+justify-content: space-between;
+  align-items: center;
+ 
+
+}
+.brand {
+}
+.brand__icon-versace {
+  width: clamp(7.25rem, 6.0893rem + 4.7619vw, 10.375rem);
+  height:clamp(1.4375rem, 1.2054rem + 0.9524vw, 2.0625rem);
+}
+.brand__icon-zara {
+  width: clamp(3.9375rem, 3.2875rem + 2.6667vw, 5.6875rem);
+  height: clamp(1.625rem, 1.3464rem + 1.1429vw, 2.375rem);
+}
+
+.brand__icon-gucci {
+  width: clamp(6.8125rem, 5.7214rem + 4.4762vw, 9.75rem);
+  height:clamp(1.5625rem, 1.3071rem + 1.0476vw, 2.25rem);
+}
+
+.brand__icon-prada {
+  width: clamp(7.9375rem, 6.3821rem + 6.381vw, 12.125rem);
+  height:clamp(1.3125rem, 1.0571rem + 1.0476vw, 2rem);
+}
+
+.brand__icon-calvin {
+  width:  clamp(8.375rem, 6.7036rem + 6.8571vw, 12.875rem);
+  height: clamp(1.3125rem, 1.0339rem + 1.1429vw, 2.0625rem);
+}
+@media (width<=768px){
+  .hero__brand:nth-child(5) {
+   display: inline-block;
+        width: fit-content;
+        order: 1;
+        flex-basis: 36%;
+        translate: 60% 0;
+  }
+  
+}
