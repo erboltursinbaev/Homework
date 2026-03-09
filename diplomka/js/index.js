@@ -1,5 +1,5 @@
 
-import BurgerMenu from "./burger.js";
+
 import { slider } from "./slider.js";
 
 
@@ -13,3 +13,4 @@ import { slider } from "./slider.js";
 	} catch (error) {
 		console.error(error);
 	}
+
