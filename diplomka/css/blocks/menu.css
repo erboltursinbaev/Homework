@@ -5,14 +5,14 @@
   display: flex;
   justify-items: center;
   align-items: center;
-  gap: clamp(12px, 2vw, 24px);
+  gap:  clamp(0.75rem, 0.4714rem + 1.1429vw, 1.5rem);;
 }
-  @media (width>=768) {
+  
  
   .header__menu-link {
-    font-size: clamp(12px, 1vw, 14px);
+    font-size: clamp(0.75rem, 0.7036rem + 0.1905vw, 0.875rem);
   }
-}
+
 
 
 .header__menu-item {
@@ -53,6 +53,6 @@
   background: transparent;
 }
 .header__menu-link svg{
-  width: clamp(10px, 1vw, 16px);
-  height: clamp(10px, 1vw, 16px);
+  width:  clamp(0.625rem, 0.4857rem + 0.5714vw, 1rem);
+  height: clamp(0.625rem, 0.4857rem + 0.5714vw, 1rem);
 }
