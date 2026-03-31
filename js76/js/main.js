@@ -90,26 +90,3 @@ const handleCreateTodo = (todos, text) => {
   todosContainer.appendChild(todoEl);
 };
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault(); 
-  const text = input.value.trim(); 
-  if (!text) return; 
-  handleCreateTodo(todos, text);  
-  input.value = ""; 
-});
-
-todosContainer.addEventListener("click", (event) => {
- 
-  const todoEl = event.target.closest(".todo");
-  if (!todoEl) return;
-
-  const id = Number(todoEl.dataset.id);
-
-  if (event.target.classList.contains("button-complete")) {
-    completeTodoById(todos, id); 
-    todoEl.classList.toggle("completed"); 
-  } else if (event.target.classList.contains("button-delete")) {
-    deleteTodoById(todos, id); 
-    todoEl.remove(); 
-  }
-});
