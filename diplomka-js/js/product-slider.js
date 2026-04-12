@@ -28,7 +28,31 @@ export const productSlider = () => {
     if (index < 0) {
       index = total - 1; // loop
     }
+let startX = 0;
+let endX = 0;
 
+wrapper.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+wrapper.addEventListener("touchend", (e) => {
+  endX = e.changedTouches[0].clientX;
+
+  const diff = startX - endX;
+
+  // свайп влево → next
+  if (diff > 50) {
+    index++;
+    if (index >= total) index = 0;
     updateSlider();
-  });
+  }
+
+  // свайп вправо → prev
+  if (diff < -50) {
+    index--;
+    if (index < 0) index = total - 1;
+    updateSlider();
+  }
+});
+    
 };
