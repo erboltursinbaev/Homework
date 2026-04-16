@@ -1,4 +1,4 @@
-export const Modal = () => {
+ const Modal = () => {
  const buttons = document.querySelectorAll("[data-modal-button]");
   const closeButtons = document.querySelectorAll("[data-modal-close]");
 
@@ -26,4 +26,4 @@ export const Modal = () => {
     });
   });
  };
- 
+ export default Modal;
