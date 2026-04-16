@@ -1,4 +1,4 @@
- const Modal = () => {
+ const modal = () => {
  const buttons = document.querySelectorAll("[data-modal-button]");
   const closeButtons = document.querySelectorAll("[data-modal-close]");
 
