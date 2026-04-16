@@ -22,19 +22,5 @@ menu.addEventListener("click", (e) => {
   toggleMenu();
 }});
 
-let startX = 0;
-document.ontouchend = e => {
-  let diff = e.changedTouches[0].clientX - startX;
 
-  
-  if (diff < -50) {
-    headerMenu.classList.add("header__menu--open");
-    burger.classList.add("burger--open");
-  }
-
-    if (diff > 50) {
-    headerMenu.classList.remove("header__menu--open");
-    burger.classList.remove("burger--open");
-  }
-};
 };
