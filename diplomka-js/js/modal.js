@@ -26,4 +26,4 @@
     });
   });
  };
- export default Modal;
+ export default modal;
