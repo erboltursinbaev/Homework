@@ -1,11 +1,11 @@
-import  { BurgerMenu }  from './burger.js';
+import  { burgerMenu }  from './burger.js';
 import { productSlider } from './product-slider.js';
 import { sizes } from './sizes.js';
-import  Modal  from './modal.js';
+import  modal  from './modal.js';
 
-Modal();
+modal();
  try {
-  BurgerMenu();
+  burgerMenu();
   productSlider();
   sizes();
  } catch (error) {
