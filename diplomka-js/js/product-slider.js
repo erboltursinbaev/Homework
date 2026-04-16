@@ -52,7 +52,7 @@ wrapper.addEventListener("touchend", (e) => {
     index--;
     if (index < 0) index = total - 1;
     updateSlider();
-  }
+  
 });
     
 };
