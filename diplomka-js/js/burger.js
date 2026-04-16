@@ -1,4 +1,4 @@
-export const BurgerMenu = () => {
+export const burgerMenu = () => {
 const burger = document.querySelector(".burger");
 const headerMenu = document.querySelector(".header__menu");
 const menu = document.querySelector(".menu__list");
